@@ -1,0 +1,166 @@
+# vim: set ts=2 sw=2 sts=2 expandtab:
+
+# this configuration (and other elements) shamelessly... borrowed from
+#. Kilian Cavalotti's Sherlock site
+#
+# Site information
+site_name:        SERC
+site_description: Stanford Earth Research Computing documentation
+site_author:      Mark Yoder
+#site_url:         https://www.sherlock.stanford.edu/
+
+# Repository
+#   - repo_url point to the public organization page, so anyone can get to it
+#   - edit_url points to the sherlock private repo, so only authorized users can edit content
+repo_name:        'SERC Open Source'
+repo_url:         'https://github.com/jeffersonscientific/SERC'
+#edit_uri:         'www.sherlock.stanford.edu/edit/docs/src/'
+
+# Copyright
+copyright:        "Copyright &copy; 2019 &mdash; <a href='mailto:srcc-support@stanford.edu'>Stanford Research Computing Center</a>"
+
+# Google Analytics
+#google_analytics: ['UA-68034405-2', auto]
+
+# Documentation and theme directories
+docs_dir:   src
+site_dir:   site
+theme:
+  name: null
+  custom_dir: theme
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+
+  language: en
+  feature:
+    tabs: false
+  palette:
+    primary: stanford
+    accent:  stanford
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon:  'img/logo_small.png'
+  logo:     'img/logo_small.png'
+
+extra_css:
+  - ''
+extra_javascript:
+  - ''
+
+
+
+# Options
+extra:
+  search:
+    language: 'en'
+    tokenizer: '[\s\_\-\.]+'
+  made_in: "<a href='https://www.google.com/maps/place/Stanford,+CA'>Stanford, California</a>"
+  social:
+    - type: 'globe'
+      link: 'https://srcc.stanford.edu'
+    - type: 'github'
+      link: 'https://github.com/stanford-rc'
+    - type: 'twitter'
+      link: 'https://twitter.com/StanfordCompute'
+    - type: 'linkedin'
+      link: 'https://www.linkedin.com/school/1792/'
+  manifest: 'manifest.webmanifest'
+
+# Extensions
+markdown_extensions:
+  - fontawesome_markdown
+  - codehilite:
+      guess_lang: False
+  - admonition
+  - def_list
+  - footnotes
+  - meta
+  - toc:
+      permalink: "#"
+      toc_depth: 4
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink:
+      repo_url_shortener: True
+      provider: 'github'
+      user: 'stanford-rc'
+      repo: 'sherlock'
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      base_path: src/docs/
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: True
+  - pymdownx.tilde
+  - pymdownx.keys
+  - pymdownx.escapeall:
+      hardbreak: True
+      nbsp:      True
+
+
+# Page tree
+#
+# /!\ IMPORTANT: keep the /docs/ prefix, as /index.html is not managed by
+# mkdocs (landing page)
+#
+
+nav:
+  - Overview:
+    - Introduction:      docs/overview/introduction.md
+    - Concepts:          docs/overview/concepts.md
+    - Glossary:          docs/overview/glossary.md
+    - Tech specs:        docs/overview/specs.md
+    - Status:            docs/overview/status.md
+    - About:             docs/overview/about.md
+  - Getting Started:
+    - Prerequisites:     docs/getting-started/prerequisites.md
+    - Connecting:        docs/getting-started/connecting.md
+    - Submitting jobs:   docs/getting-started/submitting.md
+  - User guide:
+    - Running jobs:      docs/user-guide/running-jobs.md
+    - Specialized resources:
+#      - Large memory nodes:   docs/user-guide/bigmem.md
+      - GPU nodes:       docs/user-guide/gpu.md
+    - OnDemand:          docs/user-guide/ondemand.md
+    - Troubleshooting:   docs/user-guide/troubleshoot.md
+  - Storage:
+    - Overview:          docs/storage/overview.md
+    - Filesystems:       docs/storage/filesystems.md
+    - Data sharing:      docs/storage/data-sharing.md
+    - Data protection:   docs/storage/data-protection.md
+    - Data transfer:     docs/storage/data-transfer.md
+  - Software:
+    - Overview:          docs/software/overview.md
+    - List:              docs/software/list.md
+    - Modules:           docs/software/modules.md
+    - Installation:      docs/software/install.md
+    - Containers:        docs/software/containers.md
+    - Usage:
+      - R:               docs/software/using/R.md
+      - Julia:           docs/software/using/julia.md
+      - Python:          docs/software/using/python.md
+#      - Matlab:          docs/software/using/matlab.md
+      - Perl:            docs/software/using/perl.md
+      - Spark:           docs/software/using/spark.md
+      - MariaDB:         docs/software/using/mariadb.md
+      - PostgreSQL:      docs/software/using/postgresql.md
+      - Singularity:     docs/software/using/singularity.md
+  - Advanced topics:
+    - Connection:        docs/advanced-topics/connection.md
+#    - Scheduler:         docs/advanced-topics/scheduler.md
+#    - Owners:            docs/advanced-topics/owners.md
+
