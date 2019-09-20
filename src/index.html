@@ -11,7 +11,7 @@
 
   <title>Stanford Earth Research Computing</title>
 
-  <link rel="icon" href="img/logo_small.png" type="image/x-icon">
+  <link rel="icon" href="img/logo_earth_map.jpg" type="image/x-icon">
 
   <!-- Bootstrap Core CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" 
@@ -92,13 +92,13 @@
   <!-- Google Analytics -->
   <!-- Having shamelessly borrowed this content as a template, these are not our GA credentials-->
   <!--
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-68034405-2', 'auto');
-    ga('send', 'pageview');
+  //<script>
+  //  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  //  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  //  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  //  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  //  ga('create', 'UA-68034405-2', 'auto');
+  //  ga('send', 'pageview');
   </script>
   -->
 
@@ -111,19 +111,19 @@
 
   <!-- Navigation -->
   <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-    <div class="container">
+    <div class="container" >
       <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header page-scroll">
+      <div class="navbar-header page-scroll
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
           <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
         </button>
         <a class="navbar-brand page-scroll" href="#page-top">
-              <img src="img/logo_small.png" height="30" alt="">Sherlock
+              <img src="img/stanford-earth-logo_transp.png" height="30" alt="">SERC
         </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
       <div class="nav navbar-nav navbar-right"></div>
         <ul class="nav navbar-nav navbar-right">
           <li class="hidden">
@@ -133,8 +133,14 @@
             <span class="navbar-separator"></span>
           </li>
           <li>
-            <a class="page-scroll" href="#services">Services</a>
+            <a class="page-scroll" href="#sherlock">Sherlock</a>
           </li>
+          <li>
+          <a class="page-scroll" href="#mazama">Mazama</a>
+          </li>
+		  <li>
+		  <a class="page-scroll" href="#rcf">RCF</a>
+		  </li>
           <li>
             <a class="page-scroll" href="#info">Info</a>
           </li>
@@ -150,10 +156,12 @@
             <span id="status"/>
           </li>
           <li>
-            <a class="page-scroll" href="https://news.sherlock.stanford.edu">News</a>
+            <a class="page-scroll" href="https://news.sherlock.stanford.edu">News (SERC?)</a>
+            <!--
             <noticeable-widget id="news"
             access-token="AoaqgE2gEgx8fjXbxETY" project-id="bYyIewUV308AvkMztxix">
             </noticeable-widget>
+            -->
           </li>
           <li>
             <a class="page-scroll" href="/docs">Docs</a>
@@ -181,10 +189,22 @@
   <header>
     <div class="container">
       <div class="intro-text">
-        <img height="180" src="img/logo.png" alt="">
-        <div class="intro-heading">Sherlock</div>
-        <div class="intro-subtitle">The HPC cluster for all your computing needs</div>
-        <div class="intro-content">Need to additional computing resources to
+        <img height="180" src="img/hive_crew.jpg" alt="">
+        <div class="intro-heading"><h3>Stanford Earth Research Computing</div>
+        <div class="intro-subtitle">Stanford Earth profides a variety of high performance computing (HPC) resources to satisfy your research requirements.
+        </div>
+        <div class="intro-content">
+        Resources available to EARTH researchers include:
+        <ul>
+        <li> SRCC <i>Sherlock</i> HPC cluster </li>
+        <li> <i>Sherlock-SERC</i> HPC partition</li>
+        <li> Mazama HPC cluster</li>
+        <li> Mazama "Tool-Server" compute nodes </li>
+        </ul>
+        
+        These systems provide a variety of tools and resources, including cluster-computing, interactive compute nodes, GPU computation, memory-intensive nodes, data storage, and more.
+        
+        Need to additional computing resources to
         support your Stanford Earth research?  You may
         want to try the SERC partition on the SRCC Sherlock cluster! Purchased and
         supported with seed
@@ -199,50 +219,145 @@
     </div>
   </header>
 
+<!-- Computing Resources Section -->
+<section id="computing_resrouces">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">SERC Computing Resrouces</h2>
+            </div>
+        </div>
+    </div>
+ </section>
 
-  <!-- Services Section -->
-  <section id="services">
+  <!-- Sherlock Section -->
+  <section id="sherlock">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Services</h2>
-          <h3 class="section-subheading text-muted">A one-stop shop for all our scientific computing needs</h3>
+          <h2 class="section-heading"><i>Sherlock</i></h2>
+          <h3 class="section-subheading text-muted"><i>A collaboration between Stanford Earth and Stanford Research Computing Center (SRCC) </i></h3>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-server fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Compute</h4> <p class="text-muted">All
-          the resources you need in one place: compute nodes, GPUs, large
-          memory nodes, blazing fast interconnect, parallel filesystems, and
-          more!</p>
+      <div class="row">
+        <div class="col-lg-12">
+        <h4 id="sherlock_overview" class="airy">Overview:</h4>
+            <p class="text-muted">
+            The <i>Sherlock</i> HPC system, purchased and supported with seed funding from the Provost, is available for use by all Stanford faculty and their reserach teams. Sherlock is maintained by <a href="//srcc.stanford.edu">Stanford Research Computing Center</a> (SRCC); more information can be found at <a id="www_sherlock" href="https://www.sherlock.stanford.edu">https://www.sherlock.stanford.edu</a>. Sherlock's collaborative, shared resource approach facilitates scales of computing, varieties of available software, and levels of support that are not easily achieved by individual research groups or schools. </p>
+
+        <h5 id="sherlock_serc" class="airy">Sherlock SERC Partition:</h5>
+            <p class="text-muted">
+                In addition to genearl access to Sherlock compute nodes, Stanford Earth maintains a dedicated <i>SERC partition</i> on Sherlock -- a set of nodes prioritized for use by SE3 researchers. The Fall, 2019 expansion of the SERC partition included 24 nodes with 192/384 GB RAM, and several GPU capable nodes. Contact somebody for more information on how to access the SERC partition.
+            </p>
+        <h5 id="sherlock_resources" class="airy">Sherlock Resources:</h5>
+            <p class="text-muted">
+                The Sherlock cluster includes a broad, capable variety of computing tools. It is difficult to say exactly how big, and what specific resources are available, because it is constantly in flux as users subscribe to the system, nodes are added, and old nodes are swapped out for new ones. Generally speaking, Sherlock provices:
+                <ul class="text-muted">
+                    <li>Traditional HPC "batch" computing, managed by SLURM</li>
+                    <li>Interactive sessions, including multi-core instances</li>
+                    <li>GPU nodes</li>
+                    <li>Large memory nodes</li>
+                </ul>
+            </p>
+			<h5 id="sherlock_ssh" class="airy">ssh (requires 2-factor auth):<br>
+				$ ssh sherlock.stanford.edu</h5>
+        <h5 id="sherlock_home" class="airy">Sherlock homepage: <a href=https://www.sherlock.stanford.edu>https://www.sherlock.stanford.edu</a></h5>
+        <h5 id="sherlock_support_docs" class="airy">Sherlock support docs: <a href=https://www.sherlock.stanford.edu/docs/overview/introduction/>https://www.sherlock.stanford.edu/docs/overview/introduction/</a></h5>
+            
+            
+        
         </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-search fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Explore</h4>
-          <p class="text-muted">Sherlock provides all the software
-          tools and storage resources you'll need to explore and
-          analyze your research data.</p> </div>
-        <div class="col-md-4">
-          <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-flask fa-stack-1x fa-inverse"></i>
-          </span>
-          <h4 class="service-heading">Discover</h4>
-          <p class="text-muted">With a whole range of computational
-          tools at your fingertips, scientific breakthroughs will
-          just be a batch job away.</p> </div>
-      </div>
+    </dif>
+        
     </div>
   </section>
+  
+<!-- Mazama Section -->
+  <section id="mazama">
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading"><i>Mazama</i></h2>
+                  <h3 class="section-subheading text-muted"><i>CEES HPC and Tool Servers</i></h3>
+              </div>
+          </div>
+          <div class="row">
+              <div class="col-lg-12">
+                  <h4 id="mazama_overview" class="airy">Overview:</h4>
+                  <p class="text-muted">
+                    <i>Mazama</i> is a suite of compute resources, owned and opearated by Stanford Earth, that include:</p>
+                    <ul class="text-muted">
+                        <li> The Mazama HPC cluster (~150 nodes)</li>
+                        <li> Interactive <i>Tool Server</i> nodes </li>
+                        <li> Interactive GPU nodes </li>
+                    </ul>
+                    <h4 id="mazama_hpc" class="airy">Mazama HPC Cluster:</h4>
+                        <ul class="text-muted">
+                            <li> ~150 CentOS (RedHat Linux clone) Nodes</li>
+                            <li><i>TORQUE/Maui</i> job scheduler</li>
+                            <li>Interactive GPU nodes </li>
+							<li><b>ssh (must be connected to VPN):<br>
+								$ ssh {SUID}@cees-mazama.stanford.edu<b></li>
+                            <li> <i>note: {SUID}@ is not requried if your SUID is the same as your workstation ID; .stanford.edu may not be necessary, since you're using the VPN</i>
+                        </ul>
+                    <h4 id='mazama_tool' class='airy'>Mazama Tool Servers</h4>
+                        <ul class="text-muted">
+                            <li>10 (?) Independent compute nodes/servers (not connected to cluster)</li>
+                            <li>24 cores, 512GB RAM, but shared by multiple users simultaneously</li>
+                            <li>Interactive workflow (jobs are not schedules; resources are not dedicated)</li>
+                            <li>Can run Jupyter Notebooks (with a bit of work and trickery)</li>
+                            <li><b>ssh (must be connected to VPN): {SUID}@cees-tool-{1-10}.stanford.edu<b></li>
+                        </ul>
+                        <h4 id='mazama_gpu' class='airy'>Mazama GPU Servers</h4>
+                            <ul class="text-muted">
+                                <li>GPU servers are tool servers with GPU cards</li>
+                                <li>3 Independent compute nodes/servers (not connected to cluster)</li>
+								<li><b>ssh (must be connected to VPN):<br>
+									$ ssh {SUID}@cees{-gpu, -gpu-2, -gpu3}.stanford.edu<b></li>
+                            </ul>
+                    <h5 id=www_cees class='airy'>CEES website: <a href="https://cees.stanford.edu" target='_blank'> https://cees.stanford.edu</a> </h5>
+                    <h5 id=mazama_pangea_docs class='airy'>CEES HPC general information: <a href="https://pangea.stanford.edu/research/groups/cees/hpc.php" target='_blank'> https://pangea.stanford.edu/research/groups/cees/hpc.php</a> </h5>
+                  </p>
+                  
+              </div>
+              </dif>
+              
+          </div>
+          </section>
+  <!-- RCF Section -->
+  <section id="rcf">
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-lg-12 text-center">
+				  <h2 class="section-heading"><i>RCF</i></h2>
+				  <h3 class="section-subheading text-muted"></h3><i>RCF HPC Cluster</i>
+			  </div>
+		  </div>
+		  <div class="row">
+			  <div class="col-lg-12">
+				  <h4 id="mazama_overview" class="airy">Overview:</h4>
+				  <p class="text-muted">
+				  <i>RCF</i> is a older, but quite capable, HPC cluster (~150 nodes?) owned  of compute resources, owned and opearated by Stanford Earth. General specifications include:</p>
+				  <ul class="text-muted">
+					  <li> ~150 CentOS (RedHat Linux clone) Nodes</li>
+					  <li>  Dual Quad-core Nehalem (5520) cpus, 24 GB memory</li>
+					  <li><i>TORQUE/Maui</i> job scheduler</li>
+					  <li><b>ssh (must be connected to VPN):<br>
+						  $ ssh {SUID}@cees-rcf.stanford.edu<b></li>
+					  <li> <i>note: {SUID}@ is not requried if your SUID is the same as your workstation ID; .stanford.edu may not be necessary, since you're using the VPN</i>
+						  </ul>
+				  <h5 id=www_cees class='airy'>CEES website: <a href="https://cees.stanford.edu" target='_blank'> https://cees.stanford.edu</a> </h5>
+				  <h5 id=mazama_pangea_docs class='airy'>CEES HPC general information: <a href="https://pangea.stanford.edu/research/groups/cees/hpc.php" target='_blank'> https://pangea.stanford.edu/research/groups/cees/hpc.php</a> </h5>
+				  </p>
+				  
+			  </div>
+			  </dif>
+			  
+		  </div>
+		  </section>
 
-  <!-- Services Section -->
+  
+  <!-- info Section -->
   <section id="info" class="bg">
     <div class="container">
       <div class="row">
@@ -348,8 +463,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Timeline</h2>
-          <h3 class="section-subheading text-muted">A little bit about Sherlock's history</h3>
+          <h2 class="section-heading">Timeline:</h2>
+          <h3 class="section-subheading text-muted">A tale of research computing at Stanford Earth</h3>
         </div>
       </div>
       <div class="row">
@@ -360,15 +475,20 @@
                 <img class="img-circle img-responsive" src="img/about/SRCF.jpg" alt="">
               </div>
               <div class="timeline-panel">
+                  <div class="timeline-heading">
+                      <h4>2010-2012</h4>
+                      <h4 class="subheading">RCF: The original CEES cluster</h4>
+                  </div>
+                  <div class="timeline-body">
+                      <p class="text-muted">Here, we tell our story of the history and motivation behind research computing at E3...</p> </div>
+              </div>
+              <div class="timeline-panel">
                 <div class="timeline-heading">
-                  <h4>2012-2014</h4>
-                  <h4 class="subheading">Research Computing early days</h4>
+                  <h4>2012-2019</h4>
+                  <h4 class="subheading">Mazama: CEES Second Generation</h4>
                 </div>
                 <div class="timeline-body">
-                  <p class="text-muted">With very limited physical space for
-                  server hosting, no shared campus HPC resources, and only 3
-                  staff members, Research Computing took off. Construction of
-                  our dedicated research datacenter started in July.</p> </div>
+                  <p class="text-muted">As the role of HPC became more important in Earth Science research, the need for expanded, more advanced computing capabilities became apparent...</p> </div>
               </div>
             </li>
             <li class="timeline-inverted">

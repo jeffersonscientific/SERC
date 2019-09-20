@@ -7,7 +7,7 @@
 site_name:        SERC
 site_description: Stanford Earth Research Computing documentation
 site_author:      Mark Yoder
-#site_url:         https://www.sherlock.stanford.edu/
+#site_url:         https://cees.stanford.edu/
 
 # Repository
 #   - repo_url point to the public organization page, so anyone can get to it
@@ -119,12 +119,12 @@ markdown_extensions:
 #
 
 nav:
+  - Sherlock Docs:        docs/sherlock/sherlock_docs.md
   - Overview:
     - Introduction:      docs/overview/introduction.md
-    - Concepts:          docs/overview/concepts.md
     - Glossary:          docs/overview/glossary.md
-    - Tech specs:        docs/overview/specs.md
-    - Status:            docs/overview/status.md
+    - Tech specs: Mazama       docs/overview/specs_mazama.md
+    - Status: Mazama            docs/overview/status.md
     - About:             docs/overview/about.md
   - Getting Started:
     - Prerequisites:     docs/getting-started/prerequisites.md
